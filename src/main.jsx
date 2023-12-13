@@ -6,10 +6,10 @@ import {
 } from "react-router-dom"
 
 import App from './App.jsx'
-import Portfolio from './components/Portfolio.jsx'
-import About from './components/About.jsx'
-import Resume from './components/Resume.jsx'
-import Contact from './components/Contact.jsx'
+import Portfolio from './pages/Portfolio/Portfolio.jsx'
+import About from './pages/About/About.jsx'
+import Resume from './pages/Resume/Resume.jsx'
+import Contact from './pages/Contact/Contact.jsx'
 
 import './index.css'
 
@@ -20,11 +20,11 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Portfolio />
+        element: <About />
       },
       {
-        path: "/Me",
-        element: <About />
+        path: "/Portfolio",
+        element: <Portfolio />
       },
       {
         path: "/Resume",

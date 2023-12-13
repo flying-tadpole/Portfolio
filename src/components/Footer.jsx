@@ -1,5 +1,5 @@
 export default function Footer() {
     return(
-        <h2>This is the footer</h2>
+        <a href="https://github.com/flying-tadpole">Github</a>
     )
 }
