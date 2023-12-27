@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
-import './portfolio.css'
+import { Container } from 'react-bootstrap'
 
 export default function Portfolio() {
 
@@ -39,20 +39,18 @@ export default function Portfolio() {
 
     const projects = projectList.map(item => {
         return (
-            <Card key={item.title} style={{ width: '18rem' }}>
-                <Card.Img className='imgCard' varient="top" src={item.image} />
-                <Card.Body>
-                    <Card.Title>{item.title}</Card.Title>
-                    <Card.Text>
-                        description will go here.
-                    </Card.Text>
-                    <Button varient="primary" href={item.repo}>GitHub Repo</Button>
-                </Card.Body>
-            </Card>
-            // <div>
-            //     <a href={item.repo}>{item.title}</a>
-            //     <img src={item.image}></img>
-            // </div>
+            <Container>
+                <Card key={item.title} style={{ width: '100%' }}>
+                    <Card.Img className='imgCard' varient="top" src={item.image} />
+                    <Card.Body>
+                        <Card.Title>{item.title}</Card.Title>
+                        <Card.Text>
+                            description will go here.
+                        </Card.Text>
+                        <Button varient="primary" href={item.repo}>GitHub Repo</Button>
+                    </Card.Body>
+                </Card>
+            </Container>
         )
     })
 
