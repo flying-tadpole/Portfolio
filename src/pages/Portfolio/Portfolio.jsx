@@ -51,7 +51,7 @@ export default function Portfolio() {
                     <Card.Body>
                         <Card.Title>{item.title}</Card.Title>
                         <Card.Text>
-                            description will go here.
+                            {description}
                         </Card.Text>
                         <Button varient="primary" href={item.repo}>GitHub Repo</Button>
                     </Card.Body>
